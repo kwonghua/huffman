@@ -1,6 +1,6 @@
 # Huffman Coding Compression
 
-This project implements the **Huffman Coding** algorithm for lossless data compression and includes a comprehensive test suite (`test.py`) to compare its performance against **Run-Length Encoding (RLE)** across various data distributions.
+This project implements the **Huffman Coding** algorithm for lossless data compression and includes a comprehensive test suite (`test.py`) to compare its performance against **Lemppel-Ziv-Welch(LZW)** across various data distributions.
 
 | File Name | Description |
 | :--- | :--- |
