@@ -10,6 +10,8 @@ This project implements the **Huffman Coding** algorithm for lossless data compr
 | `createrandom.py` | Script to generate the `random.txt` file (data with random, uniform distribution). |
 | `lzw.py` | Implementation of the LZW (Lempel-Ziv-Welch) algorithm. Serves as the "Competitor" algorithm to evaluate dictionary-based compression vs. Huffman. |
 | `fixedlength.py` | Implementation of Fixed-Length (ASCII) encoding. Serves as the "Baseline" (Control Group) to calculate raw compression ratios. |
+| `entropy.py` | Computes the Shannon entropy of a given text by analyzing character frequency and applying the formula H = −Σ p log₂(p). Serves as a theoretical benchmark for evaluating compression efficiency. |
+| `analyze_entropy.py` | Script that reads input datasets (e.g., equal, random, Wikipedia text) and outputs their entropy values using `entropy.py`. Used to compare theoretical entropy with actual compression ratios across algorithms. |
 
 ---
 
