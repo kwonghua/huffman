@@ -8,6 +8,8 @@ This project implements the **Huffman Coding** algorithm for lossless data compr
 | `test.py` | The main test driver. It executes the compression, calculates performance ratios, and runs integrity checks. |
 | `createequal.py` | Script to generate the `equal_dist.txt` file (data with a uniform pattern). |
 | `createrandom.py` | Script to generate the `random.txt` file (data with random, uniform distribution). |
+| `lzw.py` | Implementation of the LZW (Lempel-Ziv-Welch) algorithm. Serves as the "Competitor" algorithm to evaluate dictionary-based compression vs. Huffman. |
+| `fixedlength.py` | Implementation of Fixed-Length (ASCII) encoding. Serves as the "Baseline" (Control Group) to calculate raw compression ratios. |
 
 ---
 
@@ -36,3 +38,9 @@ Execute the main test script from your terminal:
 
 ```bash
 python test.py
+```
+
+#### Output includes: 
+- Compression Ratios: Comparing Huffman vs. LZW vs. Fixed-Length.
+- Theoretical Limits: Comparison against Shannon Entropy.
+- Scalability Analysis: Testing performance on files of increasing size (10k $\to$ 100k).
